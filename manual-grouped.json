@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Nothing merges by itself; all non-major updates arrive as one PR on Monday morning.",
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest"
+      ],
+      "groupName": "all non-major",
+      "schedule": [
+        "* 0-6 * * 1"
+      ]
+    }
+  ]
+}
