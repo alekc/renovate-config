@@ -8,8 +8,8 @@ preset on top of that:
 
 | Preset | Use it when | Effect |
 | --- | --- | --- |
-| `github>alekc/renovate-config:ci-automerge` | PRs run real tests | Minor, patch and digest updates merge once checks pass |
-| `github>alekc/renovate-config:build-automerge` | PRs only build | Actions, Docker images and patch updates merge once the build passes |
+| `github>alekc/renovate-config:ci-automerge` | PRs run real tests | Minor, patch, digest and lock file maintenance updates merge once checks pass |
+| `github>alekc/renovate-config:build-automerge` | PRs only build | Actions, Docker images, patch and lock file maintenance updates merge once the build passes |
 | `github>alekc/renovate-config:manual-grouped` | No CI, or you want to review everything | All non-major updates as one PR on Monday, nothing merges by itself |
 
 A repository's `renovate.json` then stays short:

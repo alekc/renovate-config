@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Automerge GitHub Actions, Docker images and every patch update once the PR build passes; library minors wait for review.",
+  "description": "Automerge GitHub Actions, Docker images and every patch and lock file maintenance update once the PR build passes; library minors wait for review.",
   "packageRules": [
     {
       "matchManagers": [
@@ -18,7 +18,8 @@
     },
     {
       "matchUpdateTypes": [
-        "patch"
+        "patch",
+        "lockFileMaintenance"
       ],
       "automerge": true
     }
